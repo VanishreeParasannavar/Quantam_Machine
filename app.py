@@ -88,7 +88,7 @@ def load_models():
 st.sidebar.markdown("# ⚙️ Navigation")
 page = st.sidebar.radio(
     "Select a page",
-    ["🏠 Home", "🧪 Model Info", "🔬 Predictions", "📊 Comparisons", "📚 Documentation"]
+    ["🏠 Home", "🧪 Model Info", "🔬 Predictions", "📊 Comparisons"]
 )
 
 st.sidebar.markdown("---")
@@ -367,26 +367,7 @@ elif page == "📚 Documentation":
         st.markdown("""
         ## Getting Started
         
-        ### Installation
-        ```bash
-        git clone <repo>
-        cd Quantam_Machine
-        python -m venv venv
-        .\venv\Scripts\activate
-        pip install -r requirements.txt
-        ```
-        
-        ### Running Locally
-        ```bash
-        streamlit run app.py
-        ```
-        
-        ### Running Predictions
-        ```bash
-        python quickstart.py      # Quick 10-epoch demo
-        python demo.py            # Full interactive demo
-        python train.py --help    # Full training with options
-        ```
+        To get started with the Quantum Drug Discovery system, please contact the development team for access and setup instructions.
         """)
     
     with tabs[1]:
