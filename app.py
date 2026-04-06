@@ -88,7 +88,7 @@ def load_models():
 st.sidebar.markdown("# ⚙️ Navigation")
 page = st.sidebar.radio(
     "Select a page",
-    ["🏠 Home", "🧪 Model Info", "🔬 Predictions", "📊 Comparisons"]
+    ["🏠 Home", "🧪 Model Info", "🔬 Predictions", "📊 Comparisons", "📚 Documentation"]
 )
 
 st.sidebar.markdown("---")
