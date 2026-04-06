@@ -30,7 +30,6 @@ class QuantumCircuitLayer(nn.Module):
         else:
             # Use Qiskit simulator
             try:
-                from qiskit import Aer
                 from qiskit_aer import AerSimulator
                 self.dev = qml.device("qiskit_aer", wires=self.n_qubits, shots=self.shots)
             except ImportError:
